@@ -34,8 +34,15 @@
       text-align: center;
     }
 
-    .why {
+    .black {
       background-color: #000;
+      color: #fff;
+      padding: 40px;
+      text-align: left;
+    }
+
+    .grey {
+      background-color: #333;
       color: #fff;
       padding: 40px;
       text-align: left;
@@ -115,6 +122,14 @@
       background-color: #333;
       transition: 0.3s ease;
     }
+
+    .greycolumn {
+      flex: 1;
+      margin: 10px;
+      background-color: #333;
+      text-color: #fff;
+      padding: 20px;
+    }
     
   </style>
   <script src="https://kit.fontawesome.com/b77f87527c.js" crossorigin="anonymous"></script>
@@ -142,7 +157,7 @@
     <h1>Vi skrämmer bort era kostnader</h1>
   </header>
 
-  <main class="why">
+  <main class="black">
     <h2>Varför BU consulting?</h2>
     <div class="columns-container">
       <div class="column">
@@ -164,7 +179,7 @@
     
     <div class="columns-container">
       <div class="column">
-        <i class="fa-solid fa-ghost" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-ghost fa-lg" style="color: #ffffff;"></i>
         <h3>Förändring</h3>
         <p>Vi har en stolthet i att alltid driva på med energi och engagemang.</p>
       </div>
@@ -175,14 +190,32 @@
       </div>
     </div>
   </main>
-  
-  <main>
-    <h2>Tjänster</h2>
-    <ul>
-      <li>Fleet management</li>
-      <li>Fastighetsförvaltning</li>
-    </ul>
 
+  <main class="grey">
+    <h2>Tjänster</h2>
+    <div class="columns-container">
+      <div class="greycolumn">
+        <i class="fa-solid fa-truck fa-lg" style="color: #ffffff;"></i>
+        <h3>Fleet management</h3>
+        <ul>
+          <li>Fordon</li>
+          <li>Lastbilar</li>
+        </ul>
+      </div>
+      <div class="greycolumn">
+        <i class="fa-duotone fa-building fa-lg" style="--fa-secondary-color: #fcfcfc;"></i>
+        <h3>Fastighetsförvaltning</h3>
+        <ul>
+          <li>Fastigheter</li>
+          <li>Hus</li>
+          <li>Byggnader</li>
+        </ul>
+      </div>
+    </div>
+  
+  </main>
+  
+  <main class="black">
     <h2>Kontakta oss</h2>
     <p>
       Om du vill veta mer om våra tjänster eller diskutera vad vi kan göra för ert företag, kontakta oss gärna.
@@ -190,8 +223,7 @@
     <p>
       Phone: 123-456-7890<br>
       Email: info@buconsulting.nu
-    </p>
-    
+    </p> 
   </main>
 
   <footer>
