@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
   <title>Consultancy Company</title>
   <style>
+    /* UTILITIES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    li {
+      list-style: none;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif, cursive;
       margin: 0;
       padding: 0;
     }
@@ -30,15 +48,64 @@
       padding: 10px;
       text-align: center;
     }
+    /* NAVBAR STYLING STARTS */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: teal;
+      color: #fff;
+    }
+    
+    .nav-links a {
+      color: #fff;
+    }
+    
+    /* LOGO */
+    .logo {
+      font-size: 32px;
+    }
+    
+    /* NAVBAR MENU */
+    .menu {
+      display: flex;
+      gap: 1em;
+      font-size: 18px;
+    }
+    
+    .menu li:hover {
+      background-color: #4c9e9e;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    
+    .menu li {
+      padding: 5px 14px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>
-      <button type="button">Kontakta oss</button>
-      Welcome to Our Consultancy Company
-    </h1>
-  </header>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">BuConsulting AB</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="/">Hem</a></li>
+        <li><a href="/">Om oss</a></li>
+        <li><a href="/">Tjänster</li>
+        <li><a href="/">Kontakt</a></li>
+      </div>
+    </ul>
+  </nav>
 
   <main>
     <h2>About Us</h2>
@@ -63,6 +130,55 @@
     <p>
       Phone: 123-456-7890<br>
       Email: info@consultancycompany.com
+      <button type="button">Kontakta oss</button>
+    </p>
+    <h2>About Us</h2>
+    <p>
+      We are a leading consultancy company specializing in providing expert advice and solutions for businesses.
+      Our team of experienced consultants has a proven track record of delivering outstanding results for our clients.
+    </p>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Business Strategy</li>
+      <li>Market Research</li>
+      <li>Financial Planning</li>
+      <li>Operations Optimization</li>
+      <li>Change Management</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>
+      If you would like to learn more about our services or discuss a potential project, please feel free to get in touch with us.
+    </p>
+    <p>
+      Phone: 123-456-7890<br>
+      Email: info@consultancycompany.com
+      <button type="button">Kontakta oss</button>
+    </p>
+    <h2>About Us</h2>
+    <p>
+      We are a leading consultancy company specializing in providing expert advice and solutions for businesses.
+      Our team of experienced consultants has a proven track record of delivering outstanding results for our clients.
+    </p>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Business Strategy</li>
+      <li>Market Research</li>
+      <li>Financial Planning</li>
+      <li>Operations Optimization</li>
+      <li>Change Management</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>
+      If you would like to learn more about our services or discuss a potential project, please feel free to get in touch with us.
+    </p>
+    <p>
+      Phone: 123-456-7890<br>
+      Email: info@consultancycompany.com
+      <button type="button">Kontakta oss</button>
     </p>
   </main>
 
