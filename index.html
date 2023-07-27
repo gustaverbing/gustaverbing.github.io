@@ -34,7 +34,7 @@
       text-align: center;
     }
 
-    why {
+    .why {
       background-color: #000;
       color: #fff;
       padding: 20px;
@@ -48,10 +48,6 @@
     }
 
     h1 {
-      margin: 0;
-    }
-
-    h3 {
       margin: 0;
     }
 
@@ -100,19 +96,19 @@
     .menu li {
       padding: 5px 14px;
     }
-
-    table {
-      border-collapse: collapse;
-      background-color: #333;
-      width: 80%;
-      margin: 0 auto;
+    
+    .columns-container {
+      display: flex; /* Use flexbox to create columns */
+      justify-content: center; /* Center-align columns horizontally */
+      text-align: center;
     }
 
-    th, td {
-      padding: 10px;
-      text-align: center;
+    .column {
+      flex: 1; /* Each column will take equal space */
+      margin: 10px; /* Add some space between columns */
       background-color: #333;
       text-color: #fff;
+      padding: 20px;
     }
     
   </style>
@@ -141,8 +137,34 @@
     <h1>Vi skrämmer bort era kostnader</h1>
   </header>
 
-  <why>
+  <main class="why">
     <h2>Varför Bu Consulting?</h2>
+    <div class="columns-container">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>Column 1 content goes here.</p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>Column 2 content goes here.</p>
+      </div>
+      <div class="column">
+        <h2>Column 3</h2>
+        <p>Column 3 content goes here.</p>
+      </div>
+    </div>
+    
+    <div class="columns-container">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>Column 1 content goes here.</p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>Column 2 content goes here.</p>
+      </div>
+    </div>
+    
     <table>
       <tr>
         <td>
@@ -179,9 +201,9 @@
         </td>
       </tr>
     </table>
-  </why>
+  </main>
+  
   <main>
-
     <h2>Tjänster</h2>
     <ul>
       <li>Fleet management</li>
